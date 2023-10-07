@@ -180,25 +180,43 @@ footer{
     color: #fff;
    padding: 20px 0;
 }
-
-@media screen and (min-width:325px) {
+@media screen and (max-width:320px)
+{
+    .cards{
+        margin:  5px !important;
+    }
+}
+@media screen and (max-width:375px) {
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul li a{
+        font-size: 16px;
+       }
     .logo a{
         font-size: 20px;
         
        }
-       ul li a{
-        font-size: 16px;
-       }
+      
     .cards{
-        margin: auto 10px;
+        margin: auto 30px;
         margin-top: 20px;
         grid-template-columns: 1fr;
     }
-    .card
+    .card{
+        width: 300px;
+    }
+    .card img{
+        width: 300px;
+    }
 }
-@media screen and (min-width:480px) {
+
+@media screen and (min-width:425px) {
     .cards{
-        grid-template-columns: 1fr;
+        margin: auto 25px;
+        margin-top: 20px;
+        grid-template-columns: repeat(1,1fr);
     }
 }
 @media screen and (min-width:768px) {
