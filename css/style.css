@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 350px;
+    height: 250px;
+}
+.sale-price{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+nav{
+background: #000;
+padding: 10px 0px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.logo a{
+ font-size: 26px;
+ color: orange;
+ font-weight: 900;
+}
+ul li {
+    margin-right: 15px;
+   list-style: none;
+}
+ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: orange;
+    transition: 0.5s all;
+}
+.cart{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.cart i{
+    color: orange;
+}
+.cart sup{
+color: orange;
+font-weight: 800;
+}
+
+
+.hero-section{
+    background: #c4c4c4;
+    text-align: center;
+    height: 250px;
+    position: relative;
+}
+.hero-content{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.hero-content >h1{
+    font-size: 3em;
+   text-transform: capitalize;
+}
+.hero-content >p{
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+.cards {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    grid-row-gap: 30px;
+}
+.card{
+    width: 350px;
+    box-shadow: 5px 5px 5px rgb(201, 201, 201); 
+   position: relative;
+   
+}
+.card img:hover{
+    
+    transform: scale(0.9);
+    transition: 0.6s  all ease-in;
+    z-index: 1;
+}
+
+.card .cart-content{
+    padding: 0 9px;
+}
+.card .cart-content h1{
+    margin: 15px 0;
+}
+.rating{
+    border-bottom:2px solid rgb(201, 201, 201) ;
+    
+}
+.rating .fa-solid {
+    color: orange;
+}
+.rating .fa-regular{
+    color: orange;
+}
+.sale-price{
+    margin-top: -15px;
+}
+.card .cart-content .price{
+    margin: 15px 0;
+    color: orange;
+    font-weight: 900;
+    font-size: 18px;
+}
+#delete{
+    text-decoration:line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+.card .cart-content p{
+    margin: 15px 0;
+}
+.card .cart-content button{
+    margin-bottom: 15px;
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+.card .cart-content button:hover{
+    background: orange;
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+.sales{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    color: orange;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+footer{
+    margin-top: 20px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+   padding: 20px 0;
+}
+
+@media screen and (max-width:480px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:768px) {
+    .cards{
+        margin: auto 20px;
+        margin-top: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:1024px) {
+    .cards{
+       
+        margin: auto 40px;
+        margin-top: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .card{
+        width: 300px;
+    }
+    .card img{
+        width: 300px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .cards{
+        margin: auto 7%;
+        margin-top: 20px;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+
+    }
+    .card {
+        width:400px ;
+    }
+    .card img {
+        width: 400px;
+    }
+    
+}
+
+
